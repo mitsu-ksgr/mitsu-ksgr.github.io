@@ -82,4 +82,12 @@
     text-align: center;
     font-size: 1.5em;
 }
+.li_icon_img {
+    position: relative; top: 2.5px;
+    width: 16px;
+    height: 16px;
+}
+.profile_index {
+    border-bottom: 2.0px solid #777777;
+}
 
