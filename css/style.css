@@ -2,6 +2,23 @@
  * CSS for ksgr.net
  */
 
+/* Font: https://fonts.google.com/specimen/Kosugi+Maru */
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+article section:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+dl {
+  margin-top: 0px;
+}
+dl dt {
+  font-weight: bold;
+}
+
 
 /* Theme switch */
 .theme-switch {
