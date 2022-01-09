@@ -1,0 +1,18 @@
+/*****
+ * CSS for ksgr.net
+ */
+
+
+/* Theme switch */
+.theme-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.theme-icon {
+  font-size: 2.5rem;
+  font-style: normal;
+}
