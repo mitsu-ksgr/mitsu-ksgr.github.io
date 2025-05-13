@@ -9,228 +9,311 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/polyca.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.4/dist/terminal.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
   <title>mitsu-ksgr</title>
 </head>
-<body>
-  <!--
-              __                                __
-             / /___________ ______  ____  ___  / /_
-            / //_/ ___/ __ `/ ___/ / __ \/ _ \/ __/
-           / ,< (__  ) /_/ / /  _ / / / /  __/ /_
-          /_/|_/____/\__, /_/  (_)_/ /_/\___/\__/
-                    /____/
-  -->
-  <main>
-    <header>
-      <div id="theme-switch" class="theme-switch">
-        <i id="theme-icon-light" class="theme-icon">&#x1F31E;</i>
-        <i id="theme-icon-dark" class="theme-icon">&#x1f31b;</i>
-      </div>
+<body class="terminal">
+  <section class="sidebar">
+    <h2>ksgr.net</h2>
+    <nav>
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#env">Env</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#likes">Likes and ...</a></li>
+        <li><a href="#myworks">My Works</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
+  </section>
 
-      <nav><h1>ksgr.net</h1></nav>
-      <nav>
-        <ul>
-          <li><a href="https://github.com/mitsu-ksgr" class="button" target="_blank" rel="noopener noreferrer">github</a></li>
-          <li><a href="https://twitter.com/mitsu_ksgr" class="button" target="_blank" rel="noopener noreferrer">twitter</a></li>
-          <li><a href="https://mitsu-ksgr.hatenablog.com/" class="button" target="_blank" rel="noopener noreferrer">blog</a></li>
-          <li><a href="https://www.amazon.jp/hz/wishlist/ls/2EH54O2QHEEDE" class="button" target="_blank" rel="noopener noreferrer">wishlist</a></li>
-        </ul>
-      </nav>
+  <main class="main">
+    <header>
+      <h1 class="title">ksgr.net</h1>
     </header>
 
-    <article>
+    <article id="intro">
       <section>
         <p>
-          こんにちは、mitsu-ksgr です。<br>
-          プログラマをしています。
+          こんにちは、 みつ (mitsu-ksgr) です。<br>
+          さいたまでプログラマをしています。
+        </p>
+
+        <p>
+          仕事は Web Backend をやることが多いですが、
+          必要に応じて Web Frontend、ツール系（Script, GUI）も書きます。 <br>
+
+          以前は Android アプリやゲームも書いてました。
         </p>
       </section>
     </article>
 
-    <article>
+    <article id="env">
       <section>
-        <h3>プロフィール</h3>
-        <div>
-          <dl>
-            <dt>なまえ</dt>
-            <dd>mitsu-ksgr</dd>
-            <dd>mitsu</dd>
-          </dl>
-        </div>
-        <div>
-          <dl>
-            <dt>しごと</dt>
-            <dd>プログラマ</dd>
-            <dd>web (BE/FE), tools, game, Android app...</dd>
-          </dl>
-        </div>
-        <div>
-          <dl>
-            <dt>すんでるとこ</dt>
-            <dd>さいたま &#x1f1ef;&#x1f1f5;</dd>
-          </dl>
-        </div>
-      </section>
+        <h3>&gt; Env</h3>
+        <p>
+          普段は Debian マシンで開発しています。 <br />
+          Windows マシンもありますが、まともな開発環境は構築していません。 <br />
 
+          2019年くらいまでは Mac OSX も使っていましたが、
+          Linux メインに移行してからはあまり触れていません。
+        </p>
+
+        <p>
+          主に zsh を使いますが、 bash も使います。<br />
+          エディタは vim を好みますが、 VSCode も使います。
+        </p>
+
+        <p>
+          Web まわりは Docker コンテナ上で開発することが多いです。
+        </p>
+      </section>
+    </article>
+
+    <article id="links">
       <section>
-        <h3>リンク</h3>
+        <h3>&gt; Links</h3>
+
         <ul>
           <li>GitHub ... <a href="https://github.com/mitsu-ksgr" target="_blank" rel="noopener noreferrer">https://github.com/mitsu-ksgr</a></li>
-          <li>Twitter ... <a href="https://twitter.com/mitsu_ksgr" class="button" target="_blank" rel="noopener noreferrer">https://twitter.com/mitsu_ksgr</a></li>
+          <li>Twitter (現 X) ... <a href="https://twitter.com/mitsu_ksgr" class="button" target="_blank" rel="noopener noreferrer">https://twitter.com/mitsu_ksgr</a></li>
           <li>Blog ... <a href="https://mitsu-ksgr.hatenablog.com/" class="button" target="_blank" rel="noopener noreferrer">https://mitsu-ksgr.hatenablog.com/</a></li>
           <li>WishList ... <a href="https://www.amazon.jp/hz/wishlist/ls/2EH54O2QHEEDE" class="button" target="_blank" rel="noopener noreferrer">https://www.amazon.jp/hz/wishlist/ls/2EH54O2QHEEDE</a></li>
         </ul>
       </section>
+    </article>
 
+    <article id="likes">
       <section>
-        <h3>スキル</h3>
+        <h3>&gt; Likes and ...</h3>
+
+        <p>好きなやつ：</p>
+        <ul>
+          <li>Rust</li>
+          <li>C/C++</li>
+          <li>Golang</li>
+          <li>Python</li>
+          <li>Java Script</li>
+          <li>Lua</li>
+          <li>Shellscript</li>
+          <li>Docker</li>
+          <li>Debian</li>
+          <li>Arch Linux</li>
+          <li>GCP</li>
+          <li>Terraform</li>
+        </ul>
+
+        <p>苦手なやつ：</p>
+        <ul>
+          <li>CSS</li>
+          <li>CSS</li>
+          <li>CSS</li>
+        </ul>
+
+        <p>
+          最近は Rust が楽しくてお気に入り。
+        </p>
+
+        <p>
+          初めてちゃんと触れ合った言語が C だったせいか、
+          どちらかといえば静的型付け言語が好みです。<br />
+
+          サクッと片付けたいタスクなどは、
+          シェルスクリプトや Python で書くことが多いです。
+        </p>
+
+        <p>
+          個人的な Web サイトは Svelte で作成することが多いです。
+        </p>
+
+        <p>
+          クラウドサービスは、個人では GCP を使っています。
+          UI が（比較的）分かりやすいので。<br />
+          AWS は仕事で大変お世話になっていますが、未だに UI に慣れません
+          （けど最近は AWS がスッキリしてきた気がする？）。 <br />
+
+          新規ではなるべく Terraform を使うようにしています。
+        </p>
+
+        <p>
+          UI デザイン周りは苦手なので、フレームワークに頼ることが多いです。
+        </p>
+      </section>
+    </article>
+
+    <article id="myworks">
+      <section>
+        <h3>&gt; My Works</h3>
+
+        <p>
+          趣味で作成し、現在公開しているものです。
+        </p>
+
         <ul>
           <li>
-            プログラミング言語
+            <a href="https://github.com/mitsu-ksgr/dirback" target="_blank" rel="noopener noreferrer">dirback</a>
+            ... ディレクトリベースの、シンプルなバックアップツール
+          </li>
+          <li>
+            <a href="https://www.ksgr.net/i18ner/" target="_blank" rel="noopener noreferrer">i18ner</a>
+            ... i18n 用の翻訳ファイルを作成するための Web ツール
+          </li>
+          <li>
+            <a href="https://www.ksgr.net/Gggls/" target="_blank" rel="noopener noreferrer">Gggls</a>
+            ... 国・地域や言語を指定して Google 検索をする Web ツール
+          </li>
+          <li>
+            <a href="https://github.com/mitsu-ksgr/netflix-playtime-display" target="_blank" rel="noopener noreferrer">Netflix Playtime Display</a>
+            ... Netflix の再生時間に「現在の再生時間」を追加する Chrome 拡張
+          </li>
+          <li>
+            その他、細かいツールなどは
+            <a href="https://github.com/mitsu-ksgr" target="_blank" rel="noopener noreferrer">GitHub</a>
+            にあります。
+          </li>
+        </ul>
+      </section>
+    </article>
+
+
+    <article id="career">
+      <section>
+        <h3>&gt; Career</h3>
+        <p>
+          ソフトウェアエンジニアとしての簡単な職歴です。
+        </p>
+        <div class="terminal-timeline">
+          <div class="terminal-card">
+            <header>Web サイト運営・スマートフォン向けアプリ・ゲーム制作会社</header>
+            <div>
+              <p>2012/12 ~ 2014/12</p>
+              <p>使用技術: C++, Android Java, Objective-C, JS, PHP, cocos-2dx, MySQL, SQLite</p>
+              <p>フルタイムのアルバイトとして勤務。</p>
+              <p>
+                Android 向けアプリ、 Android / iOS 向けのカジュアルゲーム・ソーシャルゲームの開発を担当。<br />
+              </p>
+            </div>
+          </div>
+
+          <div class="terminal-card">
+            <header>スマートフォン向けゲーム制作会社</header>
+            <div>
+              <p>2015/01 ~ 2015/07</p>
+              <p>使用技術: C++, Android Java, JS, Python, Ruby, cocos-2dx, MySQL</p>
+              <p>正社員として勤務。</p>
+              <p>
+                Android / iOS 向けのソーシャルゲームの開発を担当。 <br />
+              </p>
+            </div>
+          </div>
+
+          <div class="terminal-card">
+            <header>スマートフォン向けゲーム制作会社</header>
+            <div>
+              <p>2015/09 ~ 2016/02</p>
+              <p>使用技術: C++, Lua, Python, cocos-2dx</p>
+              <p>業務委託のゲームエンジニアとして参画。</p>
+              <p>
+                ゲームイベントのスクリプトやエフェクトの開発を担当。
+              </p>
+            </div>
+          </div>
+
+          <div class="terminal-card">
+            <header>Web サービス会社</header>
+            <div>
+              <p>2016/03 ~ 2016/09</p>
+              <p>使用技術: Ruby, Ruby on Rails, AWS, MySQL</p>
+              <p>知人と会社を作り役員として参加。</p>
+              <p>
+                Web サービスを開発するも資金ショートで解散……！
+              </p>
+            </div>
+          </div>
+
+          <div class="terminal-card">
+            <header>業務委託マン</header>
+            <div>
+              <p>2016/10 ~ 現在</p>
+              <p>使用技術: Ruby, Python, PHP, Golang, JS, TS, Svelte, Vuejs, React, Docker, AWS, GCP, Terraform, MySQL, PostgreSQL, MongoDB, Redis ...</p>
+              <p>業務委託として複数企業の開発に参画。</p>
+              <p>
+                Web サービスの開発をメインに、Android アプリ、
+                社内ツール開発、Kintone アプリなど、様々なお仕事を頂いてます。<br />
+                主に運用・保守・開発の業務がメインですが、技術選定や設計、リードなども行います。
+              </p>
+              <p>
+                詳しくは直接聞いて頂ければと思います :)
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </article>
+
+    <article id="skills">
+      <section>
+        <h3>&gt; Skills</h3>
+        <p>
+          主に仕事で使ったもの。 <br />
+          仕事以外でも色々触っているので、何かあれば直接聞いてください。
+        </p>
+
+        <ul>
+          <li>プログラミング言語
             <ul>
-              <li>Shell Script (bash, zsh)</li>
+              <li>Shell script (bash, zsh)</li>
               <li>C99</li>
-              <li>C++ 03/11/14</li>
-              <li>Android Java</li>
+              <li>C++ ~14</li>
               <li>Golang</li>
               <li>Ruby</li>
               <li>Python</li>
-              <li>PHP</li>
-              <li>Lua</li>
               <li>JavaScript</li>
               <li>TypeScript</li>
+              <li>Lua</li>
+              <li>Java (Android)</li>
+              <li>PHP</li>
               <li>Objective C</li>
             </ul>
           </li>
-          <li>
-            フレームワークやミドルウェア
+          <li>フレームワークやミドルウェア
             <ul>
               <li>Docker (docker-compose)</li>
-              <li>Ruby on Rails (4, 5, 6)</li>
+              <li>Ruby on Rails</li>
+              <li>Svelte</li>
               <li>Vue.js</li>
               <li>Node.js</li>
               <li>Django</li>
+              <li>FastAPI</li>
               <li>cocos2d-x</li>
-              <li>jQuery</li>
-              <li>CodeIgniter</li>
               <li>Kintone</li>
-              <li>Electron</li>
             </ul>
           </li>
-          <li>
-            クラウドまわりのやつ
+          <li>DB
+            <ul>
+              <li>MySQL</li>
+              <li>SQLite</li>
+              <li>PostgreSQL</li>
+              <li>Mongo DB</li>
+              <li>Redis</li>
+            </ul>
+          </li>
+          <li>クラウドサービス
             <ul>
               <li>AWS</li>
               <li>GCP</li>
-            </ul>
-          </li>
-          <li>
-            RDBMS, NoSQL, KVS
-            <ul>
-              <li>MySQL</li>
-              <li>PostgreSQL</li>
-              <li>Redis</li>
-              <li>Mongo DB</li>
-              <li>SQLite</li>
-            </ul>
-          </li>
-          <li>
-            OS
-            <ul>
-              <li>Debian 7~10</li>
-              <li>ArchLinux</li>
-              <li>Amazon Linux (on EC2)</li>
-              <li>Ubuntu</li>
-              <li>Windows (~7, 10)</li>
-              <li>CentOS 6,7</li>
-              <li>Mac OS X (~El Capitan)</li>
-            </ul>
           </li>
         </ul>
       </section>
+    </article>
 
-      <section>
-        <h3>開発環境</h3>
-        <ul>
-          <li>OS: Debian 10</li>
-          <li>Shell: zsh</li>
-          <li>エディタ: vim, VSCode</li>
-        </ul>
-        <p>最近は docker 上で開発することが多いです</p>
-      </section>
-
-      <section>
-        <h3>つくったもの（not 仕事）</h3>
-        <ul>
-          <li>
-            ツール
-            <ul>
-              <li>
-                <a href="https://github.com/mitsu-ksgr/swimmy" target="_blank" rel="noopener noreferrer">
-                  Swimmy
-                </a>
-                ... simply GUI client of docker-compose built on Electron.
-              </li>
-              <li>
-                <a href="https://github.com/mitsu-ksgr/linux-screen-capture" target="_blank" rel="noopener noreferrer">
-                  linux-screen-capture
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/mitsu-ksgr/pnganimator_sh" target="_blank" rel="noopener noreferrer">
-                  pnganimator
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            ウェブサイト
-            <ul>
-              <li><a href="https://www.ksgr.net/i18ner/" target="_blank" rel="noopener noreferrer">i18ner</li>
-              <li><a href="https://splatquiz.ink/" target="_blank" rel="noopener noreferrer">splatquiz</a></li>
-              <li><a href="https://www.ksgr.net/image-cropper/" target="_blank" rel="noopener noreferrer">Image Cropper</a></li>
-            </ul>
-          </li>
-          <li>
-            Android アプリ
-            <ul>
-              <li><a href="https://play.google.com/store/apps/details?id=jp.gr.java_conf.mitsu.hobby.marimotchi" target="_blank" rel="noopener noreferrer">まりもっち</a></li>
-              <li><a href="https://play.google.com/store/apps/details?id=jp.gr.java_conf.mitsu.app.sleepcontroller2" target="_blank" rel="noopener noreferrer">Sleep Controller</a></li>
-              <li><a href="https://play.google.com/store/apps/details?id=jp.gr.java_conf.mitsu.hobby.maze" target="_blank" rel="noopener noreferrer">Eternal Maze</a></li>
-              <li><a href="https://play.google.com/store/apps/details?id=jp.gr.java_conf.mitsu.yourpersonalcolor" target="_blank" rel="noopener noreferrer">色活！</a></li>
-            </ul>
-          </li>
-          <li>
-            Chrome extensions
-            <ul>
-              <li><a href="https://github.com/mitsu-ksgr/SimpleAmeshViewer" target="_blank" rel="noopener noreferrer">Tokyo-amesh Viewer</a></li>
-              <li><a href="https://github.com/mitsu-ksgr/PWGen4ChromeExt" target="_blank" rel="noopener noreferrer">Password Generator</a></li>
-            </ul>
-          </li>
-          <li><a href="https://github.com/mitsu-ksgr?tab=repositories" target="_blank" rel="noopener noreferrer">そのた</a></li>
-        </ul>
-      </section>
-   </article>
+    <footer>
+      <small>&copy; 2021 mitsu-ksgr</small>
+    </footer>
   </main>
-
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="https://github.com/mitsu-ksgr" class="button" target="_blank" rel="noopener noreferrer">github</a></li>
-        <li><a href="https://twitter.com/mitsu_ksgr" class="button" target="_blank" rel="noopener noreferrer">twitter</a></li>
-        <li><a href="https://mitsu-ksgr.hatenablog.com/" class="button" target="_blank" rel="noopener noreferrer">blog</a></li>
-        <li><a href="https://www.amazon.jp/hz/wishlist/ls/2EH54O2QHEEDE" class="button" target="_blank" rel="noopener noreferrer">wishlist</a></li>
-      </ul>
-      <ul>
-        <li><small>&copy; 2021 mitsu-ksgr</small></li>
-      </ul>
-    </nav>
-  </footer>
-
-  <div>
-    <script src="./js/theme-switch.js"></script>
-  </div>
 </body>
 </html>
