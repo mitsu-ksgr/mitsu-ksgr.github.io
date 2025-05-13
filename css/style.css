@@ -65,8 +65,6 @@ main {
 }
 
 .title {
-  font-size: 5.7rem;
-  color: red;
   margin-bottom: 10rem;
   letter-spacing: -1px;
   --font-color: #18E000;
