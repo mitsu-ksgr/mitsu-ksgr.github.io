@@ -80,6 +80,10 @@ article {
   margin-bottom: 5rem;
 }
 
+summary {
+  margin-bottom: 1rem;
+  color: #01A0E4;
+}
 
 /**
  * Responsive
