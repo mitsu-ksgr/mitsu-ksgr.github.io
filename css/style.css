@@ -85,6 +85,12 @@ summary {
   color: #01A0E4;
 }
 
+.mail {
+  display: inline-block;
+  padding: 0 0.5rem;
+  background-color: gray;
+}
+
 /**
  * Responsive
  */
